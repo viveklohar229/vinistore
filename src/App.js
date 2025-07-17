@@ -61,13 +61,7 @@ function App() {
   const [addingInCart, setAddingInCart] = useState(false);
   const [searchData, setSearchData] = useState([]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setShowLoader(false);
-  //   }, 2000); 
 
-  //   return () => clearTimeout(timer);
-  // }, []);
 
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/");
